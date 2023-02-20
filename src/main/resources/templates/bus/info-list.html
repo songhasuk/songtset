@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+
+	<tr th:each="dto:${list}">
+		<td class="busRouteId">[[${dto.busRouteId}]]</td>
+		<td><span class="busRouteNm" onclick="getStationByRoute(this)" style="cursor: pointer;">[[${dto.busRouteNm}]]</span></td>
+		<td>[[${dto.stStationNm}]]</td>
+		<td>[[${dto.edStationNm}]]</td>
+		<td>[[${dto.firstBusTm}]]</td>
+		<td>[[${dto.lastBusTm}]]</td>
+		<td>[[${dto.lastBusTm}]]</td>
+		<td>[[${dto.corpNm}]]</td>
+	</tr>
+	
+
+</html>
